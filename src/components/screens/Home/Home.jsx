@@ -24,10 +24,13 @@ const data = [
 const Home = () => {
     const [todos, setTodos] = useState(data)
 
-    const changeTodo = id => {
+    const changeTodoStatus = id => {
         const copy = [...todos]
         const current = copy.find(t => t._id === id)
         current.isCompleted = !current.isCompleted
+        copy.sort((a, b) => {
+            return a.isCompleted - b.isCompleted
+        })
         setTodos(copy)
     }
 
@@ -44,7 +47,7 @@ const Home = () => {
                 <TodoItem 
                     key={todo._id} 
                     todo={todo}
-                    changeTodo={changeTodo}
+                    changeTodoStatus={changeTodoStatus}
                     removeTodo={removeTodo} />
             ))}
         </div>

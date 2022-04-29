@@ -3,7 +3,7 @@ import Check from "./Check";
 import cn from 'classnames'
 import {BsTrash} from 'react-icons/bs'
 
-const TodoItem = ({todo, changeTodo, removeTodo}) => {
+const TodoItem = ({todo, changeTodoStatus, removeTodo}) => {
     return (
         <div className="
                 flex 
@@ -17,7 +17,7 @@ const TodoItem = ({todo, changeTodo, removeTodo}) => {
         >
             <button 
                 className="flex items-center"
-                onClick={() => changeTodo(todo._id)}
+                onClick={() => changeTodoStatus(todo._id)}
             >
                 <Check isCompleted={todo.isCompleted}/>
                 <span className={cn({
