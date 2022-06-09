@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/To-Do-List-Tasks-with-sorting/static/css/main.4b257234.css",
+    "main.js": "/To-Do-List-Tasks-with-sorting/static/js/main.c054e19d.js",
+    "index.html": "/To-Do-List-Tasks-with-sorting/index.html",
+    "main.4b257234.css.map": "/To-Do-List-Tasks-with-sorting/static/css/main.4b257234.css.map",
+    "main.c054e19d.js.map": "/To-Do-List-Tasks-with-sorting/static/js/main.c054e19d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b257234.css",
+    "static/js/main.c054e19d.js"
+  ]
+}
